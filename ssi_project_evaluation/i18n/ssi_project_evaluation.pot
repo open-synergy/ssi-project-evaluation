@@ -1,0 +1,1466 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_project_evaluation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__batch_id
+msgid "# Batch"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__name
+msgid "# Document"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__evaluation_id
+msgid "# Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_needaction
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_needaction
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_needaction
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_needaction
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_needaction
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_needaction
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__active
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__active
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__active
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__active
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__active
+msgid "Active"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__active_approval_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__active_approval_ids
+msgid "Active Approvals"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__active_approver_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__active_approver_partner_ids
+msgid "Active Partners"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__active_approver_user_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__active_approver_user_ids
+msgid "Active Users"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:res.groups,name:ssi_project_evaluation.project_batch_evaluation_all_group
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_all_group
+msgid "All"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__allowed_policy_template_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__allowed_project_ids
+msgid "Allowed Projects"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__result_ids
+msgid "Allowed Results"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__approval_template_id
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__approval_template_id
+msgid "Approval Configuration"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__approval_template_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__approval_template_id
+msgid "Approval Template"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__approval_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__approval_ids
+msgid "Approvals"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Approve Queue"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__approve_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__approved
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__approved
+msgid "Approved"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__mode__auto
+msgid "Automatic"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__automatic_qualitative_value_id
+msgid "Automatic Qualitative Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__automatic_quantitative_value
+msgid "Automatic Quantitative Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__automatic_result_id
+msgid "Automatic Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_batch_evaluation_menu
+msgid "Batch Evaluations"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__approve_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__approve_ok
+msgid "Can Approve"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__cancel_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__cancel_ok
+msgid "Can Cancel"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__confirm_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__confirm_ok
+msgid "Can Confirm"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__done_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__done_ok
+msgid "Can Finished"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__manual_number_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__reject_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__reject_ok
+msgid "Can Reject"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__restart_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__restart_ok
+msgid "Can Restart"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__restart_approval_ok
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__open_ok
+msgid "Can Start"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.evaluate_project_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Cancel Queue"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__cancel_reason_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__cancel_reason_id
+msgid "Cancel Reason"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__cancel_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__code
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__code
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__code
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__code
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__code
+msgid "Code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__company_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__company_id
+#: model:res.groups,name:ssi_project_evaluation.project_batch_evaluation_company_group
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_company_group
+msgid "Company"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__company_partner_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__company_partner_id
+msgid "Company Partner"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:res.groups,name:ssi_project_evaluation.project_batch_evaluation_company_child_group
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_company_child_group
+msgid "Company and All Child Companies"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__company_id
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__computation_code
+msgid "Computation Code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_view_form
+msgid "Compute Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.evaluate_project_view_form
+msgid "Confirm"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Confirm Queue"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__confirm_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_form
+msgid "Create Cron"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__create_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__create_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__cron_id
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_form
+msgid "Cron"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__previous_date
+msgid "Date"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__date_end
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__date_end
+msgid "Date End"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__date_start
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__date_start
+msgid "Date Start"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_form
+msgid "Delete Cron"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_form
+msgid "Detail"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project__display_name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__dissenting_opinion
+msgid "Dissenting Opinion"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_type__project_selection_method__domain
+msgid "Domain"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__done_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__date_end_offset_id
+msgid "End Date Offset"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.evaluate_project_action
+#: model:ir.model,name:ssi_project_evaluation.model_evaluate_project
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.evaluate_project_view_form
+msgid "Evaluate Project"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_project_view_form_evaluation
+msgid "Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project__evaluation_tag_ids
+msgid "Evaluation Tags"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__type_id
+msgid "Evaluation Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__type_ids
+msgid "Evaluation Types"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__evaluation_ids
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_project_view_form_evaluation
+msgid "Evaluations"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__final_result_id
+msgid "Final Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__activity_type_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__activity_type_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__activity_type_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__activity_type_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__activity_type_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__activity_type_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project__id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__id
+msgid "ID"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__activity_exception_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__activity_exception_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__activity_exception_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__activity_exception_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__activity_exception_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__activity_exception_icon
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__message_unread
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__message_unread
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__message_unread
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__message_unread
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__message_unread
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__message_unread
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__message_needaction
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__message_has_error
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__message_has_error
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__message_has_error
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__message_has_error
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__message_has_error
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__message_has_error
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_is_follower
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_is_follower
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_is_follower
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_is_follower
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_is_follower
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_is_follower
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__item_id
+msgid "Item"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_value_set_view_form
+msgid "Items"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project____last_update
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__write_uid
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__write_date
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__diff_evaluation
+msgid "Latest Diff Than Previous"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__latest_evaluation_id
+msgid "Latest Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Load Projects"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__mode__manual
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_type__project_selection_method__manual
+msgid "Manual"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__manual_qualitative_value_id
+msgid "Manual Qualitative Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__manual_quantitative_value
+msgid "Manual Quantitative Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__manual_result_id
+msgid "Manual Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__manual_number_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__active
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__active
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__active
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__active
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__active
+msgid ""
+"Master data status\n"
+"\n"
+"* Inactive data can not be selected when creating new transaction\n"
+"* Transaction with inactive master data can still be viewed\n"
+"* Set master data as inactive if master data no longger needed,\n"
+"but master data already used on transaction"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__code
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__code
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__code
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__code
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__code
+msgid ""
+"Master data unique identifier.\n"
+"\n"
+"* Fill with '/' if You do not need unique identifier\n"
+"* Click 'Generate Code' button to automatically assign code.\n"
+"  Sequence template mush be set to perform this action\n"
+"  Only master data with '/' code will be assign automatic code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_has_error
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_has_error
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_has_error
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_has_error
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_has_error
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_has_error
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__mode
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__mode
+msgid "Mode"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__name
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__name
+msgid "Name"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__need_validation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__need_validation
+msgid "Need Validation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_summary
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_summary
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_summary
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_summary
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_summary
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_summary
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__next_approval_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__next_approval_ids
+msgid "Next Approvals"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__note
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__note
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__note
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__note
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__note
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__note
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__note
+msgid "Note"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__message_needaction_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__message_needaction_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__message_needaction_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__message_needaction_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__message_needaction_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__message_needaction_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__message_has_error_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__message_has_error_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__message_has_error_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__message_has_error_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__message_has_error_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__message_has_error_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__message_unread_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__message_unread_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__message_unread_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__message_unread_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__message_unread_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__message_unread_counter
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Open Evaluations"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__policy_template_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__policy_template_id
+msgid "Policy Template"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__previous_evaluation_id
+msgid "Previous Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__previous_result_id
+msgid "Previous Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_project
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_evaluate_project__project_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__project_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__project_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__project_id
+msgid "Project"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_batch_evaluation
+#: model:ir.module.category,name:ssi_project_evaluation.project_batch_evaluation_data_ownership_module_category
+#: model:ir.module.category,name:ssi_project_evaluation.project_batch_evaluation_workflow_module_category
+msgid "Project Batch Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_batch_evaluation_action
+msgid "Project Batch Evaluations"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__project_domain
+msgid "Project Domain"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation
+#: model:ir.module.category,name:ssi_project_evaluation.project_evaluation_data_ownership_module_category
+#: model:ir.module.category,name:ssi_project_evaluation.project_evaluation_workflow_module_category
+#: model:ir.ui.menu,name:ssi_project_evaluation.menu_project_evaluation_config
+#: model:ir.ui.menu,name:ssi_project_evaluation.menu_project_evaluation_header
+msgid "Project Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_question
+msgid "Project Evaluation - Question"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_question_type
+msgid "Project Evaluation - Question Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_question_type_group
+msgid "Project Evaluation Question Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_evaluation_question_type_action
+msgid "Project Evaluation Question Types"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_result
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_result_group
+msgid "Project Evaluation Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_evaluation_result_action
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project__project_evaluation_result_ids
+msgid "Project Evaluation Results"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_type
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__type_id
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_type_group
+msgid "Project Evaluation Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_type_question
+msgid "Project Evaluation Type - Question"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_evaluation_type_action
+msgid "Project Evaluation Types"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_value_item
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_value_item_group
+msgid "Project Evaluation Value Item"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_evaluation_value_item_action
+msgid "Project Evaluation Value Items"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_value_set
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_value_set_group
+msgid "Project Evaluation Value Set"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_evaluation_value_set_item
+msgid "Project Evaluation Value Set - Item"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_evaluation_value_set_action
+msgid "Project Evaluation Value Sets"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.actions.act_window,name:ssi_project_evaluation.project_evaluation_action
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project__project_evaluation_ids
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_evaluation_menu
+msgid "Project Evaluations"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__project_python_code
+msgid "Project Python Code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__project_selection_method
+msgid "Project Selection Method"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__project_ids
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_form
+msgid "Projects"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_type__project_selection_method__code
+msgid "Python Code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__type__qualitative
+msgid "Qualitative"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__qualitative_value_id
+msgid "Qualitative Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__type__quantitative
+msgid "Quantitative"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__quantitative_value
+msgid "Quantitative Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__question_type_id
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_form
+msgid "Question"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__question_type_id
+msgid "Question Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_evaluation_question_type_menu
+msgid "Question Types"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__question_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__question_ids
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_view_form
+msgid "Questions"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Queue Info"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__queue_job_batch_id
+msgid "Queue Job Batch"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__queue_job_batch_state
+msgid "Queue Job Batch State"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__queue_job_ids
+msgid "Queue Jobs"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__reject_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__rejected
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:base.automation,name:ssi_project_evaluation.cron_remove_queue_batch_from_batch_evaluation
+#: model:ir.actions.server,name:ssi_project_evaluation.action_remove_queue_batch_from_batch_evaluation
+msgid "Remove Queue Batch From Project Batch Evaluation"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__user_id
+msgid "Responsible"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__activity_user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__activity_user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__activity_user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__activity_user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__activity_user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__activity_user_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Restart Queue"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__restart_approval_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__restart_ok
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_project_evaluation_result__result_id
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_view_form
+msgid "Result"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__result_computation_code
+msgid "Result Computation Code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_evaluation_result_menu
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_project_view_form_evaluation
+msgid "Results"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__reviewer_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__reviewer_id
+msgid "Reviewer"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.module.category,name:ssi_project_evaluation.project_workflow_module_category
+msgid "SSI Project"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.module.category,name:ssi_project_evaluation.project_configurator_module_category
+msgid "SSI Project Configurator"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.module.category,name:ssi_project_evaluation.project_data_ownership_module_category
+msgid "SSI Project Data Ownership"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__sequence
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__sequence
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__date_start_offset_id
+msgid "Start Date Offset"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_batch_evaluation_view_form
+msgid "Start Queue"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__state
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__state
+msgid "State"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__activity_state
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__activity_state
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__activity_state
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__activity_state
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__activity_state
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__activity_state
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__tag_id
+msgid "Tag"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__name
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__type_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__type
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__type
+msgid "Type"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_evaluation_type_menu
+msgid "Types"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_unread
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_unread
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_unread
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_unread
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_unread
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_unread
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:res.groups,name:ssi_project_evaluation.project_batch_evaluation_user_group
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_user_group
+msgid "User"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__user_id
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__reviewer_id
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__active_approver_user_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:res.groups,name:ssi_project_evaluation.project_batch_evaluation_validator_group
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_validator_group
+msgid "Validator"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__value
+msgid "Value"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_evaluation_value_item_menu
+msgid "Value Items"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__set_id
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__set_id
+msgid "Value Set"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.ui.menu,name:ssi_project_evaluation.project_evaluation_value_set_menu
+msgid "Value Sets"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__value_ids
+msgid "Values"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:res.groups,name:ssi_project_evaluation.project_batch_evaluation_viewer_group
+#: model:res.groups,name:ssi_project_evaluation.project_evaluation_viewer_group
+msgid "Viewer"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_batch_evaluation__website_message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation__website_message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__website_message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__website_message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type__website_message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__website_message_ids
+#: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_batch_evaluation__website_message_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation__website_message_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_question_type__website_message_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_result__website_message_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_type__website_message_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_item__website_message_ids
+#: model:ir.model.fields,help:ssi_project_evaluation.field_project_evaluation_value_set__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model:ir.model,name:ssi_project_evaluation.model_project_project_evaluation_result
+msgid "project.project - Evaluation Result"
+msgstr ""
