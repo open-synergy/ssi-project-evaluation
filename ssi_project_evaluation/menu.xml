@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 OpenSynergy Indonesia
+     Copyright 2024 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+<menuitem
+        id="menu_project_evaluation_header"
+        name="Project Evaluation"
+        parent="project.menu_main_pm"
+        sequence="50"
+    />
+
+<menuitem
+        id="menu_project_evaluation_config"
+        name="Project Evaluation"
+        parent="project.menu_project_config"
+        sequence="20"
+    />
+
+</odoo>

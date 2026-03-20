@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2024 OpenSynergy Indonesia-->
+<!--Copyright 2024 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="project_project_view_form_evaluation" model="ir.ui.view">
+    <field name="name">project.project - Form (Evaluation)</field>
+    <field name="model">project.project</field>
+    <field name="inherit_id" ref="project.edit_project" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//page[last()]" position="after">
+                <page
+                        name="evaluation"
+                        string="Evaluation"
+                        groups="ssi_project_evaluation.project_evaluation_viewer_group"
+                    >
+                    <field name="evaluation_tag_ids" widget="many2many_tags" />
+                    <separator string="Results" />
+                    <field name="project_evaluation_result_ids" nolabel="1">
+                        <tree>
+                            <field name="type_id" />
+                            <field name="latest_evaluation_id" />
+                            <field name="result_id" />
+                            <field name="previous_evaluation_id" />
+                            <field name="previous_result_id" />
+                        </tree>
+                    </field>
+                    <separator string="Evaluations" />
+                    <field name="project_evaluation_ids" nolabel="1">
+                        <tree>
+                            <field name="name" />
+                            <field name="type_id" />
+                            <field name="date" />
+                            <field name="final_result_id" />
+                            <field name="state" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+</odoo>

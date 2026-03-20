@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2024 OpenSynergy Indonesia-->
+<!--Copyright 2024 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="project_evaluation_view_tree" model="ir.ui.view">
+    <field name="name">project_evaluation - Tree</field>
+    <field name="model">project_evaluation</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="type_id" />
+                <field name="batch_id" />
+                <field name="project_id" />
+                <field name="date" />
+                <field name="date_start" />
+                <field name="date_end" />
+                <field name="automatic_result_id" />
+                <field name="manual_result_id" />
+                <field name="final_result_id" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="project_evaluation_view_search" model="ir.ui.view">
+    <field name="name">project_evaluation - Search</field>
+    <field name="model">project_evaluation</field>
+    <field name="mode">primary</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="type_id" />
+                <field name="project_id" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="project_evaluation_view_form" model="ir.ui.view">
+    <field name="name">project_evaluation - Form</field>
+    <field name="model">project_evaluation</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field
+                        name="type_id"
+                        attrs="{'readonly': [('state', '!=', 'draft')]}"
+                    />
+                <field name="batch_id" />
+                <field
+                        name="project_id"
+                        attrs="{'readonly': [('state', '!=', 'draft')], 'required': [('state', '!=', 'draft')]}"
+                    />
+            </xpath>
+            <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="date" attrs="{'readonly': [('state', '!=', 'draft')]}" />
+                <field
+                        name="date_start"
+                        attrs="{'readonly': [('state', '!=', 'draft')]}"
+                    />
+                <field
+                        name="date_end"
+                        attrs="{'readonly': [('state', '!=', 'draft')]}"
+                    />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="question" string="Questions">
+                    <group name="question_button_group" colspan="2" col="2">
+                        <button
+                                name="action_compute_result"
+                                string="Compute Result"
+                                type="object"
+                                class="oe_link"
+                                attrs="{'invisible': [('state', '!=', 'open')]}"
+                            />
+                    </group>
+                    <field name="question_ids" nolabel="1">
+                        <tree editable="top">
+                            <field name="sequence" widget="handle" />
+                            <field name="question_type_id" />
+                            <field name="type" />
+                            <field
+                                    name="manual_qualitative_value_id"
+                                    attrs="{'invisible': [('type', '!=', 'qualitative')], 'required': [('type', '=', 'qualitative')]}"
+                                />
+                            <field
+                                    name="manual_quantitative_value"
+                                    attrs="{'invisible': [('type', '!=', 'quantitative')], 'required': [('type', '=', 'quantitative')]}"
+                                />
+                            <field name="mode" />
+                        </tree>
+                        <form>
+                            <group name="main_group" colspan="2" col="2">
+                                <field name="sequence" />
+                                <field name="question_type_id" />
+                                <field name="type" />
+                                <field
+                                        name="manual_qualitative_value_id"
+                                        attrs="{'invisible': [('type', '!=', 'qualitative')], 'required': [('type', '=', 'qualitative')]}"
+                                    />
+                                <field
+                                        name="manual_quantitative_value"
+                                        attrs="{'invisible': [('type', '!=', 'quantitative')], 'required': [('type', '=', 'quantitative')]}"
+                                    />
+                                <field name="mode" />
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+            <xpath expr="//group[@name='footer_left']" position="inside">
+                <group name="result_group" colspan="2" col="2" string="Result">
+                    <field name="automatic_result_id" />
+                    <field name="manual_result_id" />
+                    <field name="final_result_id" />
+                    <field name="dissenting_opinion" />
+                </group>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="project_evaluation_action" model="ir.actions.act_window">
+    <field name="name">Project Evaluations</field>
+    <field name="res_model">project_evaluation</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{
+        "search_default_dom_draft": 1,
+        "search_default_dom_open": 1,
+        "search_default_dom_confirm": 1,
+    }</field>
+</record>
+
+<menuitem
+        id="project_evaluation_menu"
+        name="Project Evaluations"
+        parent="menu_project_evaluation_header"
+        action="project_evaluation_action"
+        groups="project_evaluation_viewer_group"
+        sequence="110"
+    />
+</odoo>
