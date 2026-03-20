@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2024 OpenSynergy Indonesia-->
+<!--Copyright 2024 PT. Simetri Sinergi Indonesia-->
+<!--License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+<record id="project_evaluation_type_view_tree" model="ir.ui.view">
+    <field name="name">project_evaluation_type - Tree</field>
+    <field name="model">project_evaluation_type</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_tree" />
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="project_evaluation_type_view_search" model="ir.ui.view">
+    <field name="name">project_evaluation_type - Search</field>
+    <field name="model">project_evaluation_type</field>
+    <field name="mode">primary</field>
+    <field
+            name="inherit_id"
+            ref="ssi_master_data_mixin.mixin_master_data_view_search"
+        />
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="project_evaluation_type_view_form" model="ir.ui.view">
+    <field name="name">project_evaluation_type - Form</field>
+    <field name="model">project_evaluation_type</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//page[1]" position="before">
+                <page name="question" string="Question">
+                    <field name="question_ids">
+                        <tree editable="top">
+                            <field name="sequence" widget="handle" />
+                            <field name="question_type_id" />
+                        </tree>
+                    </field>
+                </page>
+                <page name="result" string="Result">
+                    <group name="result_1" colspan="4" col="2">
+                        <field name="result_ids" widget="many2many_tags" />
+                        <field name="result_computation_code" widget="ace" />
+                    </group>
+                </page>
+                <page name="project" string="Projects">
+                    <group name="project_1" colspan="4" col="2">
+                        <field name="project_selection_method" />
+                        <field
+                                name="project_ids"
+                                attrs="{'invisible':[('project_selection_method','!=','manual')]}"
+                            />
+                        <field
+                                name="project_domain"
+                                attrs="{'invisible':[('project_selection_method','!=','domain')]}"
+                                widget="domain"
+                                options="{'model': 'project.project'}"
+                            />
+                        <field
+                                name="project_python_code"
+                                attrs="{'invisible':[('project_selection_method','!=','code')]}"
+                                widget="ace"
+                            />
+                    </group>
+                </page>
+                <page name="cron" string="Cron">
+                    <button
+                            name="action_create_cron"
+                            string="Create Cron"
+                            type="object"
+                            class="oe_highlight"
+                            attrs="{'invisible': [('cron_id', '!=', False)]}"
+                        />
+                    <button
+                            name="action_delete_cron"
+                            string="Delete Cron"
+                            type="object"
+                            class="oe_highlight"
+                            attrs="{'invisible': [('cron_id', '=', False)]}"
+                        />
+                    <group name="cron_1" colspan="4" col="2">
+                        <field name="cron_id" />
+                        <field name="date_start_offset_id" />
+                        <field name="date_end_offset_id" />
+                    </group>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="project_evaluation_type_action" model="ir.actions.act_window">
+    <field name="name">Project Evaluation Types</field>
+    <field name="res_model">project_evaluation_type</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="project_evaluation_type_menu"
+        name="Types"
+        parent="menu_project_evaluation_config"
+        action="project_evaluation_type_action"
+        groups="project_evaluation_type_group"
+        sequence="110"
+    />
+</odoo>
