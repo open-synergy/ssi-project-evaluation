@@ -1,0 +1,520 @@
+scenarios:
+  - name:
+      "Project Evaluation - Full Workflow: draft to done with manual qualitative
+      question"
+    steps:
+      - step: "Setup - create project tag"
+        action: "create"
+        model: "project.tags"
+        save_as: "project_tag"
+        values:
+          name: "Test Tag PE Full"
+
+      - step: "Setup - create evaluation result"
+        action: "create"
+        model: "project_evaluation_result"
+        save_as: "eval_result"
+        values:
+          name: "Good"
+          code: "GOOD_PE"
+          tag_id: "EVAL: registry['project_tag'].id"
+
+      - step: "Setup - create value item"
+        action: "create"
+        model: "project_evaluation_value_item"
+        save_as: "value_item_good"
+        values:
+          name: "Good Value"
+          code: "GOOD_VAL_PE"
+
+      - step: "Setup - create value set"
+        action: "create"
+        model: "project_evaluation_value_set"
+        save_as: "value_set"
+        values:
+          name: "Test Value Set PE"
+          code: "TVS_PE"
+
+      - step: "Setup - add item to value set"
+        action: "create"
+        model: "project_evaluation_value_set.item"
+        save_as: "value_set_item"
+        values:
+          set_id: "EVAL: registry['value_set'].id"
+          sequence: 5
+          item_id: "EVAL: registry['value_item_good'].id"
+
+      - step: "Setup - create question type (qualitative manual)"
+        action: "create"
+        model: "project_evaluation_question_type"
+        save_as: "question_type"
+        values:
+          name: "Test Question Type PE"
+          code: "TQT_PE"
+          type: "qualitative"
+          mode: "manual"
+          set_id: "EVAL: registry['value_set'].id"
+
+      - step: "Setup - create evaluation type with result computation"
+        action: "create"
+        model: "project_evaluation_type"
+        save_as: "eval_type"
+        values:
+          name: "Test Evaluation Type PE"
+          code: "TET_PE"
+          result_computation_code:
+            "result = document.type_id.result_ids[0].id if document.type_id.result_ids
+            else False"
+          result_ids:
+            - "EVAL: registry['eval_result'].id"
+
+      - step: "Setup - add question to evaluation type"
+        action: "create"
+        model: "project_evaluation_type.question"
+        save_as: "type_question"
+        values:
+          type_id: "EVAL: registry['eval_type'].id"
+          sequence: 5
+          question_type_id: "EVAL: registry['question_type'].id"
+
+      - step: "Setup - create project"
+        action: "create"
+        model: "project.project"
+        save_as: "project"
+        values:
+          name: "Test Project PE Full"
+
+      - step: "Create project evaluation"
+        action: "create"
+        model: "project_evaluation"
+        save_as: "evaluation"
+        as_user: "base.user_admin"
+        values:
+          type_id: "EVAL: registry['eval_type'].id"
+          date: "2024-01-15"
+          date_start: "2024-01-01"
+          date_end: "2024-01-31"
+          project_id: "EVAL: registry['project'].id"
+
+      - step: "Assert evaluation created in draft state"
+        action: "assert"
+        target: "evaluation"
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+
+      - step: "Open evaluation"
+        action: "call"
+        target: "evaluation"
+        method: "action_open"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Invalidate cache after open"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Get evaluation question"
+        action: "search"
+        model: "project_evaluation.question"
+        domain:
+          - ["evaluation_id", "=", "EVAL: registry['evaluation'].id"]
+        save_as: "question"
+        limit: 1
+
+      - step: "Set qualitative value on question"
+        action: "write"
+        target: "question"
+        values:
+          manual_qualitative_value_id: "EVAL: registry['value_item_good'].id"
+
+      - step: "Invalidate cache after setting question value"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Compute result"
+        action: "call"
+        target: "evaluation"
+        method: "action_compute_result"
+        as_user: "base.user_admin"
+
+      - step: "Assert automatic result is set"
+        action: "assert"
+        target: "evaluation"
+        asserts:
+          automatic_result_id:
+            type: "value"
+            operator: "is_truthy"
+
+      - step: "Confirm evaluation"
+        action: "call"
+        target: "evaluation"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Approve evaluation (confirm -> done via approval)"
+        action: "call"
+        target: "evaluation"
+        method: "action_approve_approval"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+        asserts:
+          state:
+            type: "value"
+            expected: "done"
+
+      - step: "Invalidate cache after done"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Assert project evaluation result created"
+        action: "assert"
+        target: "project"
+        asserts:
+          project_evaluation_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 1
+
+  - name: "Project Evaluation - Cancel and Restart Workflow"
+    steps:
+      - step: "Setup - create project tag"
+        action: "create"
+        model: "project.tags"
+        save_as: "project_tag"
+        values:
+          name: "Test Tag PE Cancel"
+
+      - step: "Setup - create evaluation result"
+        action: "create"
+        model: "project_evaluation_result"
+        save_as: "eval_result"
+        values:
+          name: "Average"
+          code: "AVG_PE"
+          tag_id: "EVAL: registry['project_tag'].id"
+
+      - step: "Setup - create question type (quantitative manual)"
+        action: "create"
+        model: "project_evaluation_question_type"
+        save_as: "question_type_quant"
+        values:
+          name: "Quantitative Question PE"
+          code: "QQT_PE"
+          type: "quantitative"
+          mode: "manual"
+
+      - step: "Setup - create evaluation type"
+        action: "create"
+        model: "project_evaluation_type"
+        save_as: "eval_type"
+        values:
+          name: "Test Eval Type Cancel PE"
+          code: "TETC_PE"
+          result_computation_code: "result = False"
+
+      - step: "Setup - add quantitative question to evaluation type"
+        action: "create"
+        model: "project_evaluation_type.question"
+        save_as: "type_question"
+        values:
+          type_id: "EVAL: registry['eval_type'].id"
+          sequence: 5
+          question_type_id: "EVAL: registry['question_type_quant'].id"
+
+      - step: "Setup - create project"
+        action: "create"
+        model: "project.project"
+        save_as: "project"
+        values:
+          name: "Test Project PE Cancel"
+
+      - step: "Create project evaluation"
+        action: "create"
+        model: "project_evaluation"
+        save_as: "evaluation"
+        as_user: "base.user_admin"
+        values:
+          type_id: "EVAL: registry['eval_type'].id"
+          date: "2024-02-01"
+          date_start: "2024-02-01"
+          date_end: "2024-02-28"
+          project_id: "EVAL: registry['project'].id"
+
+      - step: "Open evaluation"
+        action: "call"
+        target: "evaluation"
+        method: "action_open"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Invalidate cache after open"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Get evaluation question (quantitative)"
+        action: "search"
+        model: "project_evaluation.question"
+        domain:
+          - ["evaluation_id", "=", "EVAL: registry['evaluation'].id"]
+        save_as: "question"
+        limit: 1
+
+      - step: "Set quantitative value on question"
+        action: "write"
+        target: "question"
+        values:
+          manual_quantitative_value: 75.0
+
+      - step: "Cancel evaluation"
+        action: "call"
+        target: "evaluation"
+        method: "action_cancel"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+        asserts:
+          state:
+            type: "value"
+            expected: "cancel"
+
+      - step: "Invalidate cache after cancel"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Restart evaluation"
+        action: "call"
+        target: "evaluation"
+        method: "action_restart"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+
+  - name: "Project Evaluation - Manual Result Override"
+    steps:
+      - step: "Setup - create project tag for override"
+        action: "create"
+        model: "project.tags"
+        save_as: "project_tag"
+        values:
+          name: "Test Tag PE Override"
+
+      - step: "Setup - create evaluation result (auto)"
+        action: "create"
+        model: "project_evaluation_result"
+        save_as: "eval_result_auto"
+        values:
+          name: "Auto Result"
+          code: "AUTO_PE"
+          tag_id: "EVAL: registry['project_tag'].id"
+
+      - step: "Setup - create evaluation result (manual)"
+        action: "create"
+        model: "project_evaluation_result"
+        save_as: "eval_result_manual"
+        values:
+          name: "Manual Override Result"
+          code: "MANUAL_PE"
+          tag_id: "EVAL: registry['project_tag'].id"
+
+      - step: "Setup - create evaluation type"
+        action: "create"
+        model: "project_evaluation_type"
+        save_as: "eval_type"
+        values:
+          name: "Test Eval Type Override PE"
+          code: "TETO_PE"
+          result_computation_code:
+            "result = document.type_id.result_ids[0].id if document.type_id.result_ids
+            else False"
+          result_ids:
+            - "EVAL: registry['eval_result_auto'].id"
+            - "EVAL: registry['eval_result_manual'].id"
+
+      - step: "Setup - create project"
+        action: "create"
+        model: "project.project"
+        save_as: "project"
+        values:
+          name: "Test Project PE Override"
+
+      - step: "Create project evaluation"
+        action: "create"
+        model: "project_evaluation"
+        save_as: "evaluation"
+        as_user: "base.user_admin"
+        values:
+          type_id: "EVAL: registry['eval_type'].id"
+          date: "2024-03-01"
+          date_start: "2024-03-01"
+          date_end: "2024-03-31"
+          project_id: "EVAL: registry['project'].id"
+
+      - step: "Open evaluation"
+        action: "call"
+        target: "evaluation"
+        method: "action_open"
+        as_user: "base.user_admin"
+        context:
+          bypass_policy_check: true
+
+      - step: "Compute automatic result"
+        action: "call"
+        target: "evaluation"
+        method: "action_compute_result"
+        as_user: "base.user_admin"
+
+      - step: "Invalidate cache"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Set manual result override"
+        action: "write"
+        target: "evaluation"
+        values:
+          manual_result_id: "EVAL: registry['eval_result_manual'].id"
+
+      - step: "Invalidate cache after manual result"
+        action: "call"
+        target: "evaluation"
+        method: "invalidate_cache"
+
+      - step: "Assert final result is truthy after manual override"
+        action: "assert"
+        target: "evaluation"
+        asserts:
+          final_result_id:
+            type: "value"
+            operator: "is_truthy"
+
+  - name: "Project Batch Evaluation - Full Workflow: draft to done"
+    steps:
+      - step: "Setup - create project tag for batch"
+        action: "create"
+        model: "project.tags"
+        save_as: "batch_project_tag"
+        values:
+          name: "Test Tag Batch PE"
+
+      - step: "Setup - create evaluation result for batch"
+        action: "create"
+        model: "project_evaluation_result"
+        save_as: "batch_eval_result"
+        values:
+          name: "Batch Good"
+          code: "BATCH_GOOD_PE"
+          tag_id: "EVAL: registry['batch_project_tag'].id"
+
+      - step: "Setup - create evaluation type for batch"
+        action: "create"
+        model: "project_evaluation_type"
+        save_as: "batch_eval_type"
+        values:
+          name: "Batch Test Type PE"
+          code: "BATCH_TEST_TYPE_PE"
+          result_ids:
+            - "EVAL: registry['batch_eval_result'].id"
+          result_computation_code: |
+            result = document.type_id.result_ids[0].id if document.type_id.result_ids else False
+
+      - step: "Setup - create project for batch"
+        action: "create"
+        model: "project.project"
+        save_as: "batch_project"
+        values:
+          name: "Test Batch Project PE"
+
+      - step: "Setup - create batch evaluation"
+        action: "create"
+        model: "project_batch_evaluation"
+        save_as: "batch_evaluation"
+        values:
+          type_id: "EVAL: registry['batch_eval_type'].id"
+          date: "2024-01-01"
+          date_start: "2024-01-01"
+          date_end: "2024-12-31"
+          project_ids:
+            - "EVAL: registry['batch_project'].id"
+
+      - step: "Assert batch is draft"
+        action: "assert"
+        target: "batch_evaluation"
+        asserts:
+          state:
+            type: "value"
+            operator: "equals"
+            expected: "draft"
+
+      - step: "Confirm batch evaluation"
+        action: "call"
+        target: "batch_evaluation"
+        method: "action_confirm"
+        context:
+          bypass_policy_check: true
+
+      - step: "Assert batch is confirm"
+        action: "assert"
+        target: "batch_evaluation"
+        asserts:
+          state:
+            type: "value"
+            operator: "equals"
+            expected: "confirm"
+
+      - step: "Approve batch evaluation"
+        action: "call"
+        target: "batch_evaluation"
+        method: "action_approve_approval"
+        context:
+          bypass_policy_check: true
+
+      - step: "Assert batch is done"
+        action: "assert"
+        target: "batch_evaluation"
+        asserts:
+          state:
+            type: "value"
+            operator: "equals"
+            expected: "done"
+
+      - step: "Invalidate cache after batch done"
+        action: "call"
+        target: "batch_evaluation"
+        method: "invalidate_cache"
+
+      - step: "Assert evaluations were created by batch"
+        action: "assert"
+        target: "batch_evaluation"
+        asserts:
+          evaluation_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 1
