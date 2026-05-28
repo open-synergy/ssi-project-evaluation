@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ssi_project_evaluation](ssi_project_evaluation/) | 14.0.1.0.0 |  | Project Evaluation
+[ssi_project_evaluation](ssi_project_evaluation/) | 14.0.1.1.0 |  | Project Evaluation
 
 [//]: # (end addons)
 
