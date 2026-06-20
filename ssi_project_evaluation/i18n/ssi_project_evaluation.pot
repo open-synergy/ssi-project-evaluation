@@ -183,6 +183,11 @@ msgid "Attachment Count"
 msgstr ""
 
 #. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
+msgid "Auto Mode"
+msgstr ""
+
+#. module: ssi_project_evaluation
 #: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__mode__auto
 msgid "Automatic"
 msgstr ""
@@ -292,6 +297,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_item__code
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set__code
 msgid "Code"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_search
+msgid "Code Project Selection"
 msgstr ""
 
 #. module: ssi_project_evaluation
@@ -451,6 +461,11 @@ msgstr ""
 #. module: ssi_project_evaluation
 #: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_type__project_selection_method__domain
 msgid "Domain"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_search
+msgid "Domain Project Selection"
 msgstr ""
 
 #. module: ssi_project_evaluation
@@ -721,6 +736,16 @@ msgid "Manual"
 msgstr ""
 
 #. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
+msgid "Manual Mode"
+msgstr ""
+
+#. module: ssi_project_evaluation
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_type_view_search
+msgid "Manual Project Selection"
+msgstr ""
+
+#. module: ssi_project_evaluation
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__manual_qualitative_value_id
 msgid "Manual Qualitative Value"
 msgstr ""
@@ -799,6 +824,7 @@ msgstr ""
 #. module: ssi_project_evaluation
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question__mode
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__mode
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
 msgid "Mode"
 msgstr ""
 
@@ -1096,6 +1122,7 @@ msgstr ""
 
 #. module: ssi_project_evaluation
 #: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__type__qualitative
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
 msgid "Qualitative"
 msgstr ""
 
@@ -1106,6 +1133,7 @@ msgstr ""
 
 #. module: ssi_project_evaluation
 #: model:ir.model.fields.selection,name:ssi_project_evaluation.selection__project_evaluation_question_type__type__quantitative
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
 msgid "Quantitative"
 msgstr ""
 
@@ -1122,6 +1150,7 @@ msgstr ""
 
 #. module: ssi_project_evaluation
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_type_question__question_type_id
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
 msgid "Question Type"
 msgstr ""
 
@@ -1305,6 +1334,7 @@ msgstr ""
 
 #. module: ssi_project_evaluation
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_result__tag_id
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_result_view_search
 msgid "Tag"
 msgstr ""
 
@@ -1419,6 +1449,7 @@ msgstr ""
 #. module: ssi_project_evaluation
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_question_type__set_id
 #: model:ir.model.fields,field_description:ssi_project_evaluation.field_project_evaluation_value_set_item__set_id
+#: model_terms:ir.ui.view,arch_db:ssi_project_evaluation.project_evaluation_question_type_view_search
 msgid "Value Set"
 msgstr ""
 
