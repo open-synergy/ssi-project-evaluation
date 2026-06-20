@@ -22,7 +22,26 @@
             ref="ssi_master_data_mixin.mixin_master_data_view_search"
         />
     <field name="arch" type="xml">
-        <data />
+        <data>
+            <xpath expr="//group[@name='dom_active']" position="after">
+                <separator />
+                <filter
+                        name="filter_project_selection_manual"
+                        string="Manual Project Selection"
+                        domain="[('project_selection_method','=','manual')]"
+                    />
+                <filter
+                        name="filter_project_selection_domain"
+                        string="Domain Project Selection"
+                        domain="[('project_selection_method','=','domain')]"
+                    />
+                <filter
+                        name="filter_project_selection_code"
+                        string="Code Project Selection"
+                        domain="[('project_selection_method','=','code')]"
+                    />
+            </xpath>
+        </data>
     </field>
 </record>
 
