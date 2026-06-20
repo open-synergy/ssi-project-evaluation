@@ -22,7 +22,15 @@
             ref="ssi_master_data_mixin.mixin_master_data_view_search"
         />
     <field name="arch" type="xml">
-        <data />
+        <data>
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="tag_id" />
+            </xpath>
+            <xpath expr="//group[@name='dom_active']" position="after">
+                <separator />
+                <filter name="grp_tag" string="Tag" context="{'group_by':'tag_id'}" />
+            </xpath>
+        </data>
     </field>
 </record>
 

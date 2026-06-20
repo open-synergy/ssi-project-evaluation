@@ -22,7 +22,47 @@
             ref="ssi_master_data_mixin.mixin_master_data_view_search"
         />
     <field name="arch" type="xml">
-        <data />
+        <data>
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="set_id" />
+            </xpath>
+            <xpath expr="//group[@name='dom_active']" position="after">
+                <separator />
+                <filter
+                        name="filter_qualitative"
+                        string="Qualitative"
+                        domain="[('type','=','qualitative')]"
+                    />
+                <filter
+                        name="filter_quantitative"
+                        string="Quantitative"
+                        domain="[('type','=','quantitative')]"
+                    />
+                <separator />
+                <filter
+                        name="filter_mode_manual"
+                        string="Manual Mode"
+                        domain="[('mode','=','manual')]"
+                    />
+                <filter
+                        name="filter_mode_auto"
+                        string="Auto Mode"
+                        domain="[('mode','=','auto')]"
+                    />
+                <separator />
+                <filter
+                        name="grp_type"
+                        string="Question Type"
+                        context="{'group_by':'type'}"
+                    />
+                <filter name="grp_mode" string="Mode" context="{'group_by':'mode'}" />
+                <filter
+                        name="grp_set"
+                        string="Value Set"
+                        context="{'group_by':'set_id'}"
+                    />
+            </xpath>
+        </data>
     </field>
 </record>
 
